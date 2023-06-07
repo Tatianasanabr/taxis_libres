@@ -20,7 +20,7 @@
     />
     <link rel="preload" href="css/styles.css" as="style" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="main.js"></script>
+		<link rel="icon" href="assets/img/big_logo.png">
   </head>
   <body>
     <header></header>
@@ -30,13 +30,13 @@
         src="assets/img/brand_name.png"
         alt="Logo de la compañía"
       />
-      <a href="#">Nosotros</a>
-      <a href="#">Viajeros</a>
-      <a href="#">Empresas</a>
-      <a href="#">Vinculados</a>
-      <a href="#">Ciudades</a>
-      <a href="#">Más</a>
-      <a href="#">Ayuda</a>
+      <a class="nav__link" href="#">Nosotros</a>
+      <a class="nav__link" href="#">Viajeros</a>
+      <a class="nav__link" href="#">Empresas</a>
+      <a class="nav__link" href="#">Vinculados</a>
+      <a class="nav__link" href="#">Ciudades</a>
+      <a class="nav__link" href="#">Más</a>
+      <a class="nav__link" href="#">Ayuda</a>
     </nav>
     <section class="home__title--container">
       <h2 class="landing__title--top">TaxiCode</h2>
@@ -56,7 +56,7 @@
         a el lograrás llegar a soluciones innovadoras que permitan resolver los
         múltiples retos de movilidad que tenemos en Colombia.
       </p>
-      <a class="home__suscribe--button" href="#"
+      <a class="home__suscribe--button" href="#home__form--section"
         >Haz parte de nuestra Hackathon</a
       >
     </section>
@@ -204,7 +204,6 @@
         alt="Winner info image"
       />
     </section>
-
 		<div class="slider">
 			<div class="slider-inner">
 				<div class="slide active">
@@ -224,7 +223,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="home__form--container">
+		<div id="home__form--section" class="home__form--container">
 			<p class="home__form--ready_text">¡Estoy listo para hackear con Taxis Libres!</p>
     <form action="https://formspree.io/f/xpzeglpb" method="POST">
 			<div class="home__options--container">
@@ -232,12 +231,10 @@
       	<label>Tu nombre:</label>
         <input class="input__form" type="name" name="Name" placeholder="Tu nombre"/>
 			</div>
-
       <div class="home__form--option">
 				<label>Tu e-mail:</label>
 					<input class="input__form" type="email" name="email" placeholder="Tu e-mail"/>
 			</div>
-
 			<div class="home__form--option">
 				<label>Tu eres:</label>
 				<select name="Career option" id="career_option" aria-placeholder="hola">
@@ -248,15 +245,26 @@
 					<option value="qa">QA</option>
 				</select>
 			</div>
-
 		</div>
       <div class="home__button--container">
       	<button class="home__form--submit" type="submit">¡Vamos a Hackear!</button>
 			</div>
 		</form>
 	</div>
+	<button id="home__btn--scroll" class="home__floating--button">↑</button>
     <footer>
-      <p class="home__footer--bottom">© 2023 Taxis Libres.</p>
+			<div class="footer__main--container">
+				<div class="footer__top--container">
+					<img class="footer__logo--image" src="assets/img/footer/footer_logo.png" alt="footer logo">
+					<p class="footer__top--text">Aviso legal página web</p>
+					<p class="footer__top--text">Política de Tratamiento de Datos</p>
+					<p class="footer__top--text">Aviso legal</p>
+				</div>
+				<div class="footer__bottom--container">
+					<p class="footer__bottom_text">© 2023 Taxis Libres & TS.</p>
+				</div>
+			</div>
+			<script src="index.js"></script>
     </footer>
   </body>
 </html>
